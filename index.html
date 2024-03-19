@@ -24,7 +24,7 @@
 
     <!--Navbar-->
     <div id="navbar" class="navbar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" id="navCloseButton">&times;</a>
         <a href="#about">About</a>
         <a href="#coding">Coding</a>
         <a href="#modeling">3D Modeling</a>
@@ -38,20 +38,20 @@
 
 
     <!--Menu icon-->
-    <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+    <span><i id="navOpenButton" class="fa-solid fa-bars"></i></span>
 
     <!--Lightbulb icon-->
-    <span onclick="colorModeChange()"><i id="colorMode" class="fa-regular fa-lightbulb"></i></span>
+    <i id="colorMode" class="fa-regular fa-lightbulb"></i>
 
     <!--Language switch-->
-    <span onclick="changeLanguage()"><p id="language">CZ/EN</p></span>
+    <span><p id="language">CZ/EN</p></span>
 
 
 
     
     <!--Photo 1-->
     <div class="parallax-photo1">
-        <section class="headers"><h1>Denis Rešitko</h1></section>
+        <section class="headers" id="main"><h1>Denis Rešitko</h1></section>
     </div>
 
 

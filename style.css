@@ -11,6 +11,20 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+:root{
+  --bg-light1: white;
+  --bg-light2: rgb(233, 232, 232);
+
+  --icon-color: black;
+
+  --header-color: black;
+
+  --footer-color: black;
+
+  --navbar-bg-color: black;
+  --navbar-color: rgb(124, 120, 120);
+  --navbar-color-hover: white;
+}
 
 
 
@@ -25,7 +39,7 @@ body::-webkit-scrollbar {
   height: 100%;
   width: 0;
 
-  background-color: rgb(231, 230, 230);
+  background-color: var(--navbar-bg-color);
 
   overflow-x: hidden;
   transition: 0.5s;
@@ -40,13 +54,13 @@ body::-webkit-scrollbar {
   font-size: 25px;
   font-weight: 800;
 
-  color: rgb(40, 37, 37);
+  color: var(--navbar-color);
 
   transition: 0.3s;
 }
 
 .navbar a:hover {
-  color: rgb(124, 120, 120);
+  color: var(--navbar-color-hover);
 }
 
 .navbar li {
@@ -57,13 +71,13 @@ body::-webkit-scrollbar {
 
   font-size: 20px;
 
-  color: rgb(40, 37, 37);
+  color: var(--navbar-color);
 
   transition: 0.3s;
 }
 
 .navbar li:hover {
-  color: rgb(124, 120, 120);
+  color: var(--navbar-color-hover);
   cursor: pointer;
 }
 
@@ -89,7 +103,7 @@ span p {
   position: fixed;
   left: 30px;
   top: 50px;
-  color: black;
+  color: var(--icon-color);
   font-weight: 600;
   z-index: 9998;
 }
@@ -111,6 +125,8 @@ span:nth-of-type(1) {
   font-size: 35px;
 
   z-index: 9998;
+
+  color: var(--icon-color);
 }
 
 /* Settings for lightbulb icon */
@@ -122,12 +138,14 @@ span:nth-of-type(1) {
   z-index: 9998;
 
   font-size: 35px;
+
+  color: var(--icon-color);
 }
 
 /* Enlarging the main header */
 h1{
   font-size: 100px;
-  color: black;
+  color: var(--header-color);
 }
 
 /* Class for header arrows */
@@ -137,6 +155,8 @@ h1{
   padding-top: 30px;
 
   font-size: 40px;
+
+  color: var(--icon-color);
 }
 
 .arrowsUp{
@@ -146,7 +166,7 @@ h1{
 
   font-size: 40px;
 
-  color: black;
+  color: var(--icon-color);
 
   transform: translateX(-50%);
 }
@@ -156,7 +176,8 @@ h1{
 
 .parallax-photo1 {
   /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Black.png/220px-Black.png");*/
-  background-color: white;
+  background-color: var(--bg-light1);
+  transition: 0.2s ease;
 
   height: 100%;
   
@@ -168,7 +189,8 @@ h1{
 
 .parallax-photo2 {
   /*background-image: url("https://www.siser.cz/out/pictures/z1/A00_6_z1.jpg");*/
-  background-color: rgb(233, 232, 232);;
+  background-color: var(--bg-light2);
+  transition: 0.2s ease;
 
   height: 100%;
   
@@ -180,7 +202,8 @@ h1{
 
 .parallax-photo3 {
   /*background-image: url("https://cms-assets.themuse.com/media/lead/01212022-1047259374-coding-classes_scanrail.jpg");*/
-  background-color: white;
+  background-color: var(--bg-light1);
+  transition: 0.2s ease;
 
   height: 100%;
   
@@ -192,7 +215,8 @@ h1{
 
 .parallax-photo4 {
   /*background-image: url("https://htmlcolorcodes.com/assets/images/colors/dark-brown-color-solid-background-1920x1080.png");*/
-  background-color: rgb(233, 232, 232);
+  background-color: var(--bg-light2);
+  transition: 0.2s ease;
 
   height: 100%;
 
@@ -200,15 +224,6 @@ h1{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/* Classes for dark mode parallax photos */
-.parallax-photo-dark1{
-  background-color: black;
-}
-
-.parallax-photo-dark2{
-  background-color: rgb(27, 26, 26);
 }
 
 
@@ -224,7 +239,7 @@ h1{
   font-size: 80px;
   font-weight: 800;
 
-  color: black;
+  color: var(--header-color);
 
   transition: transform 0.5s ease-in-out;
 }
@@ -248,11 +263,11 @@ h1{
 /* Seting background for cards */
 #card-about,
 #card-modeling{
-  background-color: rgb(233, 232, 232);
+  background-color: var(--bg-light2);
 }
 
 #card-coding{
-  background-color: white;
+  background-color: var(--bg-light1);
 }
 
 /* Classes for dark mode cards */
@@ -276,8 +291,8 @@ footer{
   width: 100%;
   height: 500px;
 
-  background-color: white;
-  color: black;
+  background-color: var(--bg-light1);
+  color: var(--footer-color);
 
   transition: 0.2s ease;
 }
@@ -294,13 +309,12 @@ hr{
   position: absolute;
   top: 200px;
   width: 100%;
-  border: solid black 2px;
+  border: solid 2px;
 }
 
 /* Class for socials text */
 .socials{
   position: absolute;
-  color: black;
   font-weight: 800;
   font-size: 24px;
 }
@@ -340,10 +354,4 @@ footer p:nth-of-type(2){
 footer p:nth-of-type(3){
   top: 300px;
   right: 400px;
-}
-
-/* Setting the dark footer */
-.footer-dark{
-  background-color: black;
-  color: white;
 }
