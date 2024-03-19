@@ -1,0 +1,349 @@
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+/* Settings for navbar */
+.navbar {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  padding-top: 60px;
+  
+  height: 100%;
+  width: 0;
+
+  background-color: rgb(231, 230, 230);
+
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+
+  padding: 8px 8px 8px 32px;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  color: rgb(40, 37, 37);
+
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: rgb(124, 120, 120);
+}
+
+.navbar li {
+  display: block;
+  text-decoration: none;
+
+  padding: 8px 8px 8px 32px;
+
+  font-size: 20px;
+
+  color: rgb(40, 37, 37);
+
+  transition: 0.3s;
+}
+
+.navbar li:hover {
+  color: rgb(124, 120, 120);
+  cursor: pointer;
+}
+
+.navbar ol{
+  margin-top: 350px;
+}
+
+.navbar .closebtn {
+  position: absolute;
+
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+
+  font-size: 36px;
+}
+
+
+
+
+/* CZ/EN */
+span p {
+  position: fixed;
+  left: 30px;
+  top: 50px;
+  color: black;
+  font-weight: 600;
+  z-index: 9998;
+}
+
+p:hover{
+  cursor: pointer; 
+}
+
+i:hover{
+  cursor: pointer;
+}
+
+/* Settings for menu icon position */
+span:nth-of-type(1) {
+  position: fixed;
+  left: 1470px;
+  top: 44px;
+
+  font-size: 35px;
+
+  z-index: 9998;
+}
+
+/* Settings for lightbulb icon */
+#colorMode{
+  position: fixed;
+  left: 1410px;
+  top: 44px;
+
+  z-index: 9998;
+
+  font-size: 35px;
+}
+
+/* Enlarging the main header */
+h1{
+  font-size: 100px;
+  color: black;
+}
+
+/* Class for header arrows */
+.arrowsDown{
+  position: absolute;
+  left: 750px;
+  padding-top: 30px;
+
+  font-size: 40px;
+}
+
+.arrowsUp{
+  position: absolute;
+  top: 380px;
+  left: 50%;
+
+  font-size: 40px;
+
+  color: black;
+
+  transform: translateX(-50%);
+}
+
+
+
+
+.parallax-photo1 {
+  /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Black.png/220px-Black.png");*/
+  background-color: white;
+
+  height: 100%;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.parallax-photo2 {
+  /*background-image: url("https://www.siser.cz/out/pictures/z1/A00_6_z1.jpg");*/
+  background-color: rgb(233, 232, 232);;
+
+  height: 100%;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-photo3 {
+  /*background-image: url("https://cms-assets.themuse.com/media/lead/01212022-1047259374-coding-classes_scanrail.jpg");*/
+  background-color: white;
+
+  height: 100%;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-photo4 {
+  /*background-image: url("https://htmlcolorcodes.com/assets/images/colors/dark-brown-color-solid-background-1920x1080.png");*/
+  background-color: rgb(233, 232, 232);
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Classes for dark mode parallax photos */
+.parallax-photo-dark1{
+  background-color: black;
+}
+
+.parallax-photo-dark2{
+  background-color: rgb(27, 26, 26);
+}
+
+
+
+
+/* Settings for headers */
+.headers {
+  text-align: center;
+
+  width: 100%;
+  padding-top: 200px;
+
+  font-size: 80px;
+  font-weight: 800;
+
+  color: black;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+/* Settings for info card light */
+.cards{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+  width: 100%;
+  height: 500px;
+
+  transition: 0.2s ease;
+}
+
+/* Seting background for cards */
+#card-about,
+#card-modeling{
+  background-color: rgb(233, 232, 232);
+}
+
+#card-coding{
+  background-color: white;
+}
+
+/* Classes for dark mode cards */
+.cards-dark-odd{
+  background-color: black;
+}
+
+.cards-dark-even{
+  background-color: rgb(25, 25, 25);
+}
+
+
+
+/* Setting the footer */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+  width: 100%;
+  height: 500px;
+
+  background-color: white;
+  color: black;
+
+  transition: 0.2s ease;
+}
+
+/* Settings for farewell text */
+footer > div{
+  position: absolute;
+  bottom: 350px;
+  color: black;
+}
+
+/* Line in the footer */
+hr{
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  border: solid black 2px;
+}
+
+/* Class for socials text */
+.socials{
+  position: absolute;
+  color: black;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+/* Setting for socials icon in footer */
+footer i:nth-of-type(1) {
+  position: absolute;
+  left: 360px;
+  top: 300px;
+  font-size: 30px;
+}
+
+footer i:nth-of-type(2) {
+  position: absolute;
+  left: 660px;
+  top: 300px;
+  font-size: 25px;
+}
+
+footer i:nth-of-type(3) {
+  position: absolute;
+  left: 1020px;
+  top: 300px;
+  font-size: 25px;
+}
+
+/* Seting up socials text in footer */
+footer p:nth-of-type(1){
+  top: 300px;
+  left: 400px;
+}
+
+footer p:nth-of-type(2){
+  top: 300px;
+}
+
+footer p:nth-of-type(3){
+  top: 300px;
+  right: 400px;
+}
+
+/* Setting the dark footer */
+.footer-dark{
+  background-color: black;
+  color: white;
+}

@@ -3,10 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokument</title>
+    <title>Denis Rešitko</title>
+    <!--Reset-->
+    <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
+
+    <!--Style link-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Fontawesome icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+
 <body>
 
+    <!--Navbar-->
+    <div id="navbar" class="navbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about">About</a>
+        <a href="#coding">Coding</a>
+        <a href="#modeling">3D Modeling</a>
+
+        <ol>
+            <li>Instagram</li>
+            <li>Messenger</li>
+            <li>E-Mail</li>
+        </ol>
+    </div>
+
+
+    <!--Menu icon-->
+    <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
+    <!--Lightbulb icon-->
+    <span onclick="colorModeChange()"><i id="colorMode" class="fa-regular fa-lightbulb"></i></span>
+
+    <!--Language switch-->
+    <span onclick="changeLanguage()"><p id="language">CZ/EN</p></span>
+
+
+
+    
+    <!--Photo 1-->
+    <div class="parallax-photo1">
+        <section class="headers"><h1>Denis Rešitko</h1></section>
+    </div>
+
+
+    <!--Photo 2-->
+    <div class="parallax-photo2">
+        <section class="headers" id="about">About</section>
+        <i class="fa-solid fa-chevron-down arrowsDown" onclick="showAboutCard()"></i>
+    </div>
+
+    <!--About card-->
+    <div class="cards" id="card-about">
+        <i id="arrowUp" class="fa-solid fa-chevron-up arrowsUp" onclick="hideAboutCard()"></i>
+    </div>
+    
+
+    <!--Photo 3-->
+    <div class="parallax-photo3">
+        <section class="headers" id="coding">Coding</section>
+        <i class="fa-solid fa-chevron-down arrowsDown" onclick="showCodingCard()"></i>
+    </div>
+
+    <!--Coding card-->
+    <div class="cards" id="card-coding">
+        <i id="arrowUp" class="fa-solid fa-chevron-up arrowsUp" onclick="hideCodingCard()"></i>
+    </div>
+
+
+    <!--Photo 4-->
+    <div class="parallax-photo4">
+        <section class="headers" id="modeling">3D Modeling</section>
+        <i class="fa-solid fa-chevron-down arrowsDown" onclick="showModelingCard()"></i>
+    </div>
+
+    <!--3D Modeling card-->
+    <div class="cards" id="card-modeling">
+        <i id="arrowUp" class="fa-solid fa-chevron-up arrowsUp" onclick="hideModelingCard()"></i>
+    </div>
+    
+
+
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="headers" id="farewell">Thank you for visiting!</div>
+        <hr>
+        <i id="ig" class="fa-brands fa-instagram"></i>
+        <p class="socials" id="ig">Instagram</p>
+        <i id="fb" class="fa-brands fa-facebook-messenger"></i>
+        <p class="socials" id="fb">Messenger</p>
+        <i id="mail" class="fa-solid fa-envelope"></i>
+        <p class="socials" id="mail">E-Mail</p>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
